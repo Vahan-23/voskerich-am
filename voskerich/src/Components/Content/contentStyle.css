@@ -1,0 +1,238 @@
+body{
+    background-color: #f0eee4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentStart{
+    width: 100%;
+    height: auto;
+}
+.image1{
+    width: 100%;
+    height: 25px;
+}
+
+.goToCategories{
+    /* 
+    
+    top: 50%;
+    margin: auto;
+    left: 5%;
+    border: 10px;
+    color: #f0eee4;
+     */
+    flex-direction: column;
+    align-items: flex-start;
+    position:absolute;
+    display: flex;
+    height: auto;
+    top: 45%;
+    max-width: calc(50% - 6.8rem);
+    width: 100%;
+    padding-left: 6.8rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+}
+.textMenu{
+    font-size: 50px;
+    font-weight: 200;
+    color: #ab9696;
+    margin: 0;
+}
+.textPropMenu{
+    font-size: 25px;
+    font-weight: 200;
+    color: #ab9696;
+}
+.goToCategories a{
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+.buttonCategories{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 50px;
+    color: #fff;
+    background-color: #ffffffc5;
+    border: 5px;
+    font-size: 28px;
+    transition: 0.4s;
+}
+
+.buttonCategories:hover{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    width: 270px;
+    height: 60px;
+    color: #fff;
+    background-color: #00000081;
+    color: white;
+    border: 5px;
+}
+
+.bodyContent{
+    display: flex;
+    height: 400px;
+    background-color: #b4b3aa ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bodyContent h1{
+    font-size: 55px;
+    font-weight: 300;
+}
+.categories{
+    font-size: 50px;
+    font-weight: 300;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.goldSilver{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    animation: showCategories 0.7s;
+    height: 800px;
+}
+.goldSilverProp{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    animation: showCategories 0.7s;
+}
+.goldSilver a{
+    display: flex;
+    text-decoration: none;
+    height: 500px;
+    margin-top: 90px;
+    font-size: 45px;
+    color: #1a1818;
+    transition: 0.7s;
+    animation: showCategories 1 0.7s;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-weight: 200;
+}
+.goldSilver a:hover{
+    display: flex;
+    text-decoration: none;
+    height: 500px;
+    margin-top: 90px;
+    font-size: 55px;
+    color: #1a1818;
+    transition: 0.3s;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-weight: 200;
+}
+@keyframes showCategories {
+    0%{
+        opacity: 0%;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+}
+
+.categoriesImage{
+    display: flex;
+    margin-top: 35px;
+    width: 450px;
+    height: 500px;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.3s;
+}
+.categoriesImage:hover{
+    -webkit-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
+    -moz-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
+    box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
+    opacity: 85%;
+}
+
+
+/*  */
+
+@media (max-width: 1280px)
+{
+    .bodyContent {
+        display: flex;
+        height: 400px;
+        background-color: #b4b3aa;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+.goToCategories{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 35%;
+    padding-left: 0;
+}
+.goToCategories h1{
+    font-size: 28px;
+}
+.textPropMenu {
+    font-size: 18px;
+    font-weight: 200;
+    color: #ab9696;
+}
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.8s;
+    z-index: 7;
+    animation: show 1.5s;
+    opacity: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.logotype {
+    display: flex;
+    margin-top: 13px;
+    /* width: 273px; */
+    /* height: 60px; */
+    color: #1a1818;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    justify-content: center;
+}
+}
