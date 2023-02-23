@@ -1,65 +1,83 @@
-body{
-    background-color: #f0eee4;
+/* Citates */
+
+.citate1 {
+    font-size: 55px;
+    font-weight: 300;
+    transition: 2s;                     /* TEXT CITATES */
+    animation: citate infinite 9s;
+    color: #e3b1ba;
+    ;
 }
 
-.container{
+@keyframes citate {
+    0% {
+        font-size: 55px;
+    }
+
+    50% {
+        font-size: 70px;
+        letter-spacing: 15px;
+    }
+
+    100% {
+        font-size: 55px;
+    }
+}
+
+/* End Citates */
+
+/* Container /Video/Bajinner/Citate1 */
+
+.container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;     /* CONTAINER*/
 }
 
-.contentStart{
+.contentStart {
     width: 100%;
-    height: auto;
-}
-.image1{
-    width: 100%;
-    height: 25px;
+    height: auto;   /* VIDEO CONTAINER */
 }
 
-.goToCategories{
-    /* 
-    
-    top: 50%;
-    margin: auto;
-    left: 5%;
-    border: 10px;
-    color: #f0eee4;
-     */
+.goToCategories {
     flex-direction: column;
     align-items: flex-start;
-    position:absolute;
+    position: absolute;
     display: flex;
     height: auto;
-    top: 45%;
-    max-width: calc(50% - 6.8rem);
+    top: 53%;
+    max-width: calc(50% - 6.8rem);  /* DIV TEXT CONTAINER */
     width: 100%;
     padding-left: 6.8rem;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
 }
-.textMenu{
+
+.textMenu {
     font-size: 50px;
-    font-weight: 200;
-    color: #ab9696;
+    font-weight: 200;       /* H1 CONTAINER */
+    color: #ab9696; 
     margin: 0;
 }
-.textPropMenu{
+
+.textPropMenu {
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 200;       /* PARAGRAPH CONTAINER */
     color: #ab9696;
 }
-.goToCategories a{
+
+.goToCategories a {
     font-size: 28px;
-    text-decoration: none;
+    text-decoration: none;        /* SCROLL TO BAJIN CATEGORIES  */
     color: black;
 }
-.buttonCategories{
+
+.buttonCategories {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 260px;
+    width: 260px;               /* BUTTON */
     height: 50px;
     color: #fff;
     background-color: #ffffffc5;
@@ -68,12 +86,12 @@ body{
     transition: 0.4s;
 }
 
-.buttonCategories:hover{
+.buttonCategories:hover {
     cursor: pointer;
     display: flex;
     align-items: center;
     font-size: 30px;
-    justify-content: center;
+    justify-content: center;   /* HOVER BUTTON */
     width: 270px;
     height: 60px;
     color: #fff;
@@ -82,157 +100,200 @@ body{
     border: 5px;
 }
 
-.bodyContent{
+/* End Container */
+
+.bodyContent {
     display: flex;
-    height: 400px;
-    background-color: #b4b3aa ;
+    height: 300px;
+    /* background-color: #f0eee4 ; */
+    background-color: #000000;              /* CITATE*/
     align-items: center;
     justify-content: center;
-    
+    width: 100%;
+}
+.snakeMargin {
+    width: 100%;
+    height: 166px;
+    background-image: url('../../Images/snake.png');
 }
 
-.bodyContent h1{
-    font-size: 55px;
-    font-weight: 300;
-}
-.categories{
+/* PAGE CATEGORIES  */
+.categories {
     font-size: 50px;
     font-weight: 300;
     background-color: #fff;
-    margin-top: 30px;
     margin-bottom: 0px;
-    align-items: center;
+    align-items: center;        /* TEXT CATEGORIES (BAJINNER) */
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
-.goldSilver{
+.goldSilver {
     display: flex;
     background-color: #ffffff;
     justify-content: space-evenly;
-    animation: showCategories 0.7s;
-    height: 800px;
+    animation: showCategories 0.7s; /* DIV CATEGORIES  */
+    height: auto;
+    margin-bottom: 50px;
+    flex-direction: column;
 }
-.goldSilverProp{
+
+.goldSilverProp {
     display: flex;
     background-color: #ffffff;
     justify-content: space-evenly;
-    animation: showCategories 0.7s;
+    animation: showCategories 0.7s;      /* DIV IMAGES (A HREF) */
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-.goldSilver a{
+
+.goldSilver a {
     display: flex;
     text-decoration: none;
-    height: 500px;
-    margin-top: 90px;
+    height: auto;
     font-size: 45px;
     color: #1a1818;
-    transition: 0.7s;
+    transition: 0.7s;                        /* A HREF IMAGE */
     animation: showCategories 1 0.7s;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
     font-weight: 200;
+    /* height: auto; */
 }
-.goldSilver a:hover{
+
+.goldSilver a:hover {
     display: flex;
     text-decoration: none;
     height: 500px;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     font-size: 55px;
     color: #1a1818;
-    transition: 0.3s;
+    transition: 0.3s;                /* A HREF IMAGE HOVER */
     flex-direction: column;
     align-items: center;
     margin: 20px;
     font-weight: 200;
+    height: auto;
 }
+
 @keyframes showCategories {
-    0%{
+    0% {
         opacity: 0%;
     }
-    
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
 
-.categoriesImage{
+.categoriesImage {
     display: flex;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     width: 450px;
     height: 500px;
-    background-size: cover;
+    background-size: cover;         /* IMAGE CATEGORIES */
     align-items: flex-end;
     justify-content: center;
     transition: 0.3s;
 }
-.categoriesImage:hover{
+
+.categoriesImage:hover {
     -webkit-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
-    -moz-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
+    -moz-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);  /* IMAGE CATEGORIES HOVER */
     box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
     opacity: 85%;
 }
 
 
-/*  */
+/* END CATEGORIES */
 
-@media (max-width: 1280px)
-{
-    .bodyContent {
-        display: flex;
-        height: 400px;
-        background-color: #b4b3aa;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .container{
+/* MEDIA 1280PX START */
+
+@media (max-width: 1280px) {
+
+    .container {
         width: 100%;
         height: auto;
         display: flex;
         align-items: center;
     }
-.goToCategories{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    top: 35%;
-    padding-left: 0;
+
+    .goToCategories {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        top: 35%;
+        padding-left: 0;
+    }
+
+    .goToCategories h1 {
+        font-size: 28px;
+    }
+
+    .textPropMenu {
+        font-size: 18px;
+        font-weight: 200;
+        color: #ab9696;
+    }
+
+    .header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        height: 5rem;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.8s;
+        z-index: 7;
+        animation: show 1.5s;
+        opacity: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logotype {
+        display: flex;
+        margin-top: 13px;
+        color: #1a1818;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+        justify-content: center;
+    }
 }
-.goToCategories h1{
-    font-size: 28px;
+
+/* MEDIA 1280PX END */
+
+
+/* MEDIA 1390PX START */
+@media (max-width: 1390px) {
+    .citate1 {
+        font-size: 35px;
+    }
+
+    @keyframes citate {
+        0% {
+            font-size: 35px;
+        }
+
+        50% {
+            font-size: 35px;
+            letter-spacing: 15px;
+        }
+
+        100% {
+            font-size: 35px;
+        }
+    }
+
+    .bodyContent {
+        height: 190px;
+    }
 }
-.textPropMenu {
-    font-size: 18px;
-    font-weight: 200;
-    color: #ab9696;
-}
-.header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    height: 5rem;
-    align-items: center;
-    justify-content: space-around;
-    transition: 0.8s;
-    z-index: 7;
-    animation: show 1.5s;
-    opacity: 100%;
-    width: 100%;
-    flex-direction: column;
-}
-.logotype {
-    display: flex;
-    margin-top: 13px;
-    /* width: 273px; */
-    /* height: 60px; */
-    color: #1a1818;
-    font-family: 'Philosopher', sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-    justify-content: center;
-}
-}
+
+/* MEDIA 1390PX END */

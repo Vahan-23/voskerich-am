@@ -14,7 +14,6 @@ export default function Content() {
   };
   return (
     <div className="container">
-      {/* <div className="contentStart"><img src={contentStart} className="image1" alt="" /> </div> */}
       <video className='contentStart' muted="true"  autoPlay="true" loop="true" playsInline="" type="video/mp4">
         <source src={contStart}/>
       </video>
@@ -24,7 +23,7 @@ export default function Content() {
         <a onClick={handleClickScroll} className='buttonCategories' >Բաժիններ</a>
       </div>
       <div className="bodyContent">
-        <h1>Բոցավառեք ձեր երազանքները</h1>
+        <h1 className='citate1'>Բոցավառեք ձեր երազանքները</h1>
       </div>
     </div>
    

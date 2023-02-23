@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import HeaderScroll from './Components/Header/HeaderScroll';
 import Content from './Components/Content/Content';
 import Category from './Components/Content/Category';
+import Footer from './Components/Footer/Footer';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HeaderScroll />
     <Content />
     <Category />
+    <Footer />
   </React.StrictMode>
 );
 
