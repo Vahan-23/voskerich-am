@@ -1,0 +1,58 @@
+.logoBurger {
+    display: flex;
+    color: #1a1818;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #1a1818;
+    margin-bottom: 10px;
+    z-index: 7;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.menushow-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menushow-menu li {
+    margin: 10px;
+}
+
+.menushow-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.menushow-menu a {
+    text-decoration: none;
+    color: #1a1818;
+    padding-bottom: 8px;
+    border-bottom: 6px;
+    transition: 1s;
+}
+.menushow-menu a:hover {
+    text-decoration: none;
+    color: #1a1818;
+    padding-bottom: 8px;
+    transition: 1s;
+}

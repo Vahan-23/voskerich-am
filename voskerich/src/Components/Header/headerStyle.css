@@ -15,6 +15,8 @@
     opacity: 100%;
 }
 
+
+
 .headerMenu{
     display: flex;
     list-style: none;
@@ -157,3 +159,15 @@
     padding: 20px;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .menu {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .header{
+        display: none;
+    }
+  }
