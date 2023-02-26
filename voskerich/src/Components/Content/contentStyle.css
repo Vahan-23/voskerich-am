@@ -1,9 +1,10 @@
 /* Citates */
 
 .citate1 {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 300;
-    transition: 2s;                     /* TEXT CITATES */
+    transition: 2s;
+    /* TEXT CITATES */
     animation: citate infinite 9s;
     color: #e3b1ba;
     ;
@@ -11,16 +12,15 @@
 
 @keyframes citate {
     0% {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     50% {
-        font-size: 70px;
         letter-spacing: 15px;
     }
 
     100% {
-        font-size: 55px;
+        font-size: 45px;
     }
 }
 
@@ -30,12 +30,16 @@
 
 .container {
     display: flex;
-    flex-direction: column;     /* CONTAINER*/
+    flex-direction: column;
+    position: relative;
+    /* CONTAINER*/
+
 }
 
 .contentStart {
     width: 100%;
-    height: auto;   /* VIDEO CONTAINER */
+    height: auto;
+    /* VIDEO CONTAINER */
 }
 
 .goToCategories {
@@ -44,8 +48,9 @@
     position: absolute;
     display: flex;
     height: auto;
-    top: 53%;
-    max-width: calc(50% - 6.8rem);  /* DIV TEXT CONTAINER */
+    top: 48%;
+    max-width: calc(50% - 6.8rem);
+    /* DIV TEXT CONTAINER */
     width: 100%;
     padding-left: 6.8rem;
     -webkit-box-align: start;
@@ -55,20 +60,23 @@
 
 .textMenu {
     font-size: 50px;
-    font-weight: 200;       /* H1 CONTAINER */
-    color: #ab9696; 
+    font-weight: 200;
+    /* H1 CONTAINER */
+    color: #ab9696;
     margin: 0;
 }
 
 .textPropMenu {
     font-size: 25px;
-    font-weight: 200;       /* PARAGRAPH CONTAINER */
+    font-weight: 200;
+    /* PARAGRAPH CONTAINER */
     color: #ab9696;
 }
 
 .goToCategories a {
     font-size: 28px;
-    text-decoration: none;        /* SCROLL TO BAJIN CATEGORIES  */
+    text-decoration: none;
+    /* SCROLL TO BAJIN CATEGORIES  */
     color: black;
 }
 
@@ -77,7 +85,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 260px;               /* BUTTON */
+    width: 260px;
+    /* BUTTON */
     height: 50px;
     color: #fff;
     background-color: #ffffffc5;
@@ -90,9 +99,10 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 30px;
-    justify-content: center;   /* HOVER BUTTON */
-    width: 270px;
+    font-size: 28px;
+    justify-content: center;
+    /* HOVER BUTTON */
+    width: 260px;
     height: 60px;
     color: #fff;
     background-color: #00000081;
@@ -106,15 +116,18 @@
     display: flex;
     height: 300px;
     /* background-color: #f0eee4 ; */
-    background-color: #000000;              /* CITATE*/
+    background-color: #000000;
+    /* CITATE*/
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .snakeMargin {
     width: 100%;
     height: 166px;
     background-image: url('../../Images/snake.png');
+    /* background-size: cover; */
 }
 
 /* PAGE CATEGORIES  */
@@ -123,7 +136,8 @@
     font-weight: 300;
     background-color: #fff;
     margin-bottom: 0px;
-    align-items: center;        /* TEXT CATEGORIES (BAJINNER) */
+    align-items: center;
+    /* TEXT CATEGORIES (BAJINNER) */
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -133,7 +147,8 @@
     display: flex;
     background-color: #ffffff;
     justify-content: space-evenly;
-    animation: showCategories 0.7s; /* DIV CATEGORIES  */
+    animation: showCategories 0.7s;
+    /* DIV CATEGORIES  */
     height: auto;
     margin-bottom: 50px;
     flex-direction: column;
@@ -143,7 +158,8 @@
     display: flex;
     background-color: #ffffff;
     justify-content: space-evenly;
-    animation: showCategories 0.7s;      /* DIV IMAGES (A HREF) */
+    animation: showCategories 0.7s;
+    /* DIV IMAGES (A HREF) */
     flex-wrap: wrap;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -155,8 +171,9 @@
     height: auto;
     font-size: 45px;
     color: #1a1818;
-    transition: 0.7s;                        /* A HREF IMAGE */
-    animation: showCategories 1 0.7s;
+    transition: 0.7s;
+    /* A HREF IMAGE */
+    /* animation: showCategories 1 0.7s; */
     flex-direction: column;
     align-items: center;
     font-weight: 200;
@@ -170,7 +187,8 @@
     /* margin-top: 90px; */
     font-size: 55px;
     color: #1a1818;
-    transition: 0.3s;                /* A HREF IMAGE HOVER */
+    transition: 0.3s;
+    /* A HREF IMAGE HOVER */
     flex-direction: column;
     align-items: center;
     margin: 20px;
@@ -193,7 +211,8 @@
     /* margin-top: 35px; */
     width: 450px;
     height: 500px;
-    background-size: cover;         /* IMAGE CATEGORIES */
+    background-size: cover;
+    /* IMAGE CATEGORIES */
     align-items: flex-end;
     justify-content: center;
     transition: 0.3s;
@@ -201,9 +220,10 @@
 
 .categoriesImage:hover {
     -webkit-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
-    -moz-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);  /* IMAGE CATEGORIES HOVER */
+    -moz-box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
+    /* IMAGE CATEGORIES HOVER */
     box-shadow: -2px -4px 26px -17px rgba(52, 52, 47, 0.6);
-    opacity: 85%;
+    /* opacity: 85%; */
 }
 
 
@@ -212,6 +232,27 @@
 /* MEDIA 1280PX START */
 
 @media (max-width: 1280px) {
+    .header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        height: 5rem;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.8s;
+        z-index: 7;
+        animation: show 1.5s;
+        opacity: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu .logotypeScroll {
+        font-size: 80px;
+    }
 
     .container {
         width: 100%;
@@ -238,23 +279,6 @@
         color: #ab9696;
     }
 
-    .header {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #fff;
-        height: 5rem;
-        align-items: center;
-        justify-content: space-around;
-        transition: 0.8s;
-        z-index: 7;
-        animation: show 1.5s;
-        opacity: 100%;
-        width: 100%;
-        flex-direction: column;
-    }
 
     .logotype {
         display: flex;
@@ -265,13 +289,18 @@
         text-decoration: none;
         justify-content: center;
     }
+
+    .categoriesImage {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /* MEDIA 1280PX END */
 
 
 /* MEDIA 1390PX START */
-@media (max-width: 1390px) {
+/* @media (max-width: 1390px) {
     .citate1 {
         font-size: 35px;
     }
@@ -291,9 +320,305 @@
         }
     }
 
+} */
+/* .bodyContent {
+    height: 190px;
+} */
+
+/* MEDIA 1390pX END */
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+
     .bodyContent {
-        height: 190px;
+        display: flex;
+        height: 123px;
+        background-color: #f0eee4;
+        background-color: #000000;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .snakeMargin {
+        display: none;
+        background-image: url('../../Images/snake.png');
+        background-size: cover;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu1.show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu1.show-menu a {
+        text-decoration: none;
+        color: #1a1818;
+        padding-bottom: 8px;
+        border-bottom: 6px;
+        transition: 1s;
+    }
+
+    .menu1.show-menu a:hover {
+        text-decoration: none;
+        color: #1a1818;
+        padding-bottom: 8px;
+        transition: 1s;
+    }
+
+    .goToCategories {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        top: 35%;
+        padding-left: 27px;
+    }
+
+    .goToCategories a {
+        font-size: 19px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .goToCategories h1 {
+        font-size: 28px;
+    }
+
+    .textPropMenu {
+        font-size: 11px;
+        font-weight: 200;
+        color: #ab9696;
+    }
+
+    .contentStart {
+        width: 100%;
+        /* height: 460px; */
+    }
+
+    .buttonCategories {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 132px;
+        height: 31px;
+        color: #fff;
+        background-color: #ffffffc5;
+        border: 5px;
+        font-size: 28px;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
+
+    .buttonCategories:hover {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        /* font-size: 28px; */
+        justify-content: center;
+        /* HOVER BUTTON */
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        background-color: #00000081;
+        color: white;
+        border: 5px;
+    }
+
+    @keyframes citate {
+        0% {
+            font-size: 18px;
+        }
+
+        50% {
+            /* font-size: 11px; */
+            letter-spacing: 5px;
+        }
+
+        100% {
+            font-size: 18px;
+        }
     }
 }
 
-/* MEDIA 1390PX END */
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .goldSilver a:hover {
+        display: flex;
+        text-decoration: none;
+        height: 500px;
+        /* margin-top: 90px; */
+        font-size: 27px;
+        color: #1a1818;
+        transition: 0.3s;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        font-weight: 200;
+        height: auto;
+    }
+
+    .categoriesImage {
+        width: 120px;
+        height: 120px;
+    }
+
+    .goldSilver a {
+        display: flex;
+        text-decoration: none;
+        height: auto;
+        font-size: 22px;
+        color: #1a1818;
+        transition: 0.7s;
+        /* animation: showCategories 1 0.7s; */
+        flex-direction: column;
+        align-items: center;
+        font-weight: 200;
+        /* height: auto; */
+    }
+
+    .categories {
+        font-size: 32px;
+        font-weight: 300;
+        background-color: #fff;
+        margin-bottom: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .goToCategories h1 {
+        font-size: 20px;
+    }
+
+    .snakeMargin {
+        display: none;
+        background-image: url('../../Images/snake.png');
+        background-size: cover;
+    }
+
+    .goToCategories {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        top: 40%;
+        /* left: 0; */
+        /* padding-left: 9px; */
+    }
+
+    .textPropMenu {
+        font-size: 9px;
+        font-weight: 200;
+        color: #ab9696;
+    }
+
+    .buttonCategories {
+
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        width: 110px;
+        height: 25px;
+        color: #fff;
+        background-color: #ffffffc5;
+        border: 5px;
+        font-size: 28px;
+        transition: 0.4s;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .goToCategories a {
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .buttonCategories:hover {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        justify-content: center;
+        width: 110px;
+        height: 25px;
+        color: #fff;
+        background-color: #00000081;
+        color: white;
+        border: 5px;
+        border-radius: 20px;
+    }
+
+    .contentStart {
+        margin-top: 110px;
+    }
+
+    .bodyContent {
+        height: 55px;
+    }
+
+    @keyframes citate {
+        0% {
+            font-size: 18px;
+        }
+
+        50% {
+            /* font-size: 11px; */
+            letter-spacing: 5px;
+            color: #db082e;
+        }
+
+        100% {
+            font-size: 18px;
+        }
+    }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .contentStart {
+        margin-top: 110px;
+        width: 100%;
+        height: auto;
+    }
+    .goToCategories h1 {
+        font-size: 11px;
+    }
+    .textPropMenu {
+        font-size: 5px;
+        font-weight: 200;
+        color: #ab9696;
+    }
+    .goToCategories {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        top: 23%;
+        padding-left: 0;
+    }
+    .goToCategories a{
+        display: none;
+    }
+
+}
