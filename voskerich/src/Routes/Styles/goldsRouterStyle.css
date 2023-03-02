@@ -1,0 +1,86 @@
+.goldsBody {
+    background: #50536d;
+    display: flex;
+    visibility: visible !important;
+    flex-direction: column;
+}
+.goldSection{
+    display: grid;
+}
+.categoryTitle{
+    margin: 0;
+    margin-bottom: 40px; 
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    font-weight: 200;
+    color: white;
+    left: 45%;
+    font-size: 35px;
+    opacity: 40%;
+}
+
+.goldsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+
+}
+.backgroundGold{
+    position: relative;
+    background-size: cover;
+}
+.goldContentStart{
+    display: flex;
+    /* height: 1200px; */
+    /* background-image: url('../../Images/goldBack.jpg'); */
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imgBack{
+    background-size: cover;
+}
+
+.goldsList {
+    display: flex;
+    margin-top: 3px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.goldListTable {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+    height: auto;
+    align-items: flex-start;
+    margin: 2px;
+    background-color: white;
+    text-decoration: none;
+    color: #50536d;
+}
+.goldListTable:hover{
+    background-color: #2b2d3a9c;
+    color: white;
+    opacity: 95%;
+}
+.goldListTable h1{
+    margin: 0;
+}
+.goldListTable p{
+    margin: 0;
+}
+.goldImg{
+    width: 100%;
+
+}
+.texts{
+    padding: 34px 34px 21px 34px;
+}
+.texts h1{
+    text-decoration: none;
+}
