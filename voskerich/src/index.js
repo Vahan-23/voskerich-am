@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,14 +8,20 @@ import HeaderScroll from './Components/Header/HeaderScroll';
 import Content from './Components/Content/Content';
 import Category from './Components/Content/Category';
 import Footer from './Components/Footer/Footer';
+import GoldsRouter from './Routes/GoldsRouter';
+import Loyaout from './Routes/Loyaout';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HeaderScroll />
-    <Content />
-    <Category />
-    <Footer />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Loyaout />}></Route>
+          <Route path="/Golds" element={<GoldsRouter />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
