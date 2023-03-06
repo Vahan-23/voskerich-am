@@ -41,7 +41,7 @@ export default function AfterHeader() {
         <a href='/' className='logotypeScroll'>VOSKERICH</a>
         <div className="menuitem">
           <ul className='menuList'>
-            <li onMouseOver={handleMouseOverGold} onMouseOut={handleMouseOut}> <a className='menuAfleax' href="/Golds">Ոսկերչական Զարդեր</a>
+            <li onMouseOver={handleMouseOverGold} onMouseOut={handleMouseOut}> <a className='menuAfleax' href="/golds">Ոսկերչական Զարդեր</a>
               <div className="navigation"></div>
               <div>
                 {showPopMenuGold && <PopUpMenuGold />}
