@@ -23,26 +23,26 @@ export default function Header() {
     <div className='header'>
       <a className='logotype' href="/">VOSKERICH</a>
       <ul className='headerMenu'>
-        <li onMouseOver={handleMouseOverGold} onMouseOut={handleMouseOut} > <a href="/Golds" className='menuAfleax' >Ոսկերչական Զարդեր</a>
+        <li onMouseOver={handleMouseOverGold} onMouseOut={handleMouseOut} > <a href="/golds" className='menuAfleax' >Ոսկերչական Զարդեր</a>
           <div className="navigation"></div>
           <div>
             {showPopMenuGold && <PopUpMenuGold />}
           </div>  
         </li>
-        <li onMouseOver={handleMouseOverSilver} onMouseOut={handleMouseOut} > <a href="/Golds" className='menuAfleax' >Արծաթե Զարդեր </a>
+        <li onMouseOver={handleMouseOverSilver} onMouseOut={handleMouseOut} > <a href="/golds" className='menuAfleax' >Արծաթե Զարդեր </a>
           <div className="navigation"></div>
           <div>
             {showPopMenuSilver && <PopUpMenuSilver />}
           </div> 
         </li>
-        <li > <a href="/Golds" className='menuAfleax' >Ժամացույցներ</a>
+        <li > <a href="/golds" className='menuAfleax' >Ժամացույցներ</a>
           <div className="navigation"></div>  
         </li>
-        <li> <a href="/Golds" className='menuAfleax' >Աքսեսուարներ</a>
+        <li> <a href="/golds" className='menuAfleax' >Աքսեսուարներ</a>
           <div className="navigation"></div>
 
         </li>
-        <li   > <a href="/Golds" className='menuAfleax' >Ոսկերչական աշխարհ</a>
+        <li   > <a href="/golds" className='menuAfleax' >Ոսկերչական աշխարհ</a>
           <div className="navigation"></div>
         </li>
       </ul>

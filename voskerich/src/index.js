@@ -18,7 +18,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Loyaout />}></Route>
-          <Route path="/Golds" element={<GoldsRouter />}>
+          <Route path="/golds" element={<GoldsRouter />}>
         </Route>
       </Routes>
     </BrowserRouter>

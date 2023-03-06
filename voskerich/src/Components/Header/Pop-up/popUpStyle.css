@@ -1,14 +1,14 @@
 .popup-menu {
   display: flex;
-  position: absolute;
-  top: 100%;
+  /* position: absolute; */
+  /* top: 100%; */
   /* background-color: #50536dcc; */
   background-color: #f0eee4;
   color:#1a1818 ;
   border: 0px solid #ccc;
-  padding: 10px;
+  /* padding: 10px; */
   border-top: 0.5rem solid #1a1818 ;;
-  border-radius: 0px 20px 0px 20px;
+  border-radius: 0px 0px 0px 21px;
   animation: showNavigate 1 0.5s;
   transition: 0.5s;
     opacity: 100%;
@@ -17,6 +17,8 @@
 .popup-menu a{
   color:#1a1818 ;
   background-color: #1a1818b2 ;
+  border-radius: 0px 0px 0px 20px;
+  /* padding: 10px; */
 }
   .popup-menu:hover {
     display: block;
@@ -29,16 +31,17 @@
   }
   
   .popup-menu li {
-    color:#1a1818 ;
-    padding: 20px;
-    cursor: pointer;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
   }
   
   .popup-menu li:hover {
     background-color: #1a1818e0 ;
     color: #ffffff;
-    padding: 20px;
+    /* padding: 20px; */
     cursor: pointer;
+    border-radius: 0px 0px 0px 20px;
   }
   
   .popup-menu li:hover li {
@@ -52,4 +55,96 @@
     display: block;
   }
 
- 
+.popUp{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  /* background-color: #50536dcc; */
+  animation: showNavigate 1 0.5s;
+  transition: 0.5s;
+    opacity: 100%;
+    transition-delay: 0.5s;
+}
+
+.mens {
+  /* display: none; */
+  position: relative;
+
+  background-color: #f0eee4;
+  color: #1a1818;
+  padding: 10px;
+  border-top: 0.5rem solid #1a1818;
+  border-radius: 0px 20px 20px 0px;
+  animation: showNavigate 1 0.5s;
+  transition: 0.5s;
+  opacity: 100%;
+  transition-delay: 0.5s;
+}
+.mens h3{
+  text-align: center;
+}
+.mens:hover  {
+  display: block;
+  
+}
+.hovered{
+    background-color: #1a1818e0 ;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 20px;
+}
+.hoveredRing{
+  background-color: #1a1818e0 ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 20px;
+}
+.hovered{
+  background-color: #1a1818e0 ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 20px;
+}
+.hovered{
+  background-color: #1a1818e0 ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 20px;
+}
+.mens a{
+  color:#1a1818 ;
+  background-color: #1a1818b2 ;
+}
+
+.mens ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mens li:hover {
+  background-color: #1a1818e0 ;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+ #showMens:hover .mens{
+  display: block;
+ }
+
+ .mens:hover #showMens {
+  background-color: #1a1818e0 ;
+  color: #ffffff;
+}
+#showMens:hover .right{
+  color: white;
+ }
+.right {
+  position: relative;
+  /* background-color: white; */
+  top: 9%;
+  right: 0;
+  /* left: 47px; */
+  /* right: auto; */
+  width: 14px;
+}

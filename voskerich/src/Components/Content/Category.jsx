@@ -31,7 +31,7 @@ export default function Category() {
             <div className="goldSilver">
             <p  className='categories' >Բաժիններ</p>
                 <div className="goldSilverProp">
-                    <a  href='/Golds'><img className='categoriesImage' src={gold} alt="gold" /> Ոսկի</a>
+                    <a  href='/golds'><img className='categoriesImage' src={gold} alt="gold" /> Ոսկի</a>
                     <a href=""><img className='categoriesImage' src={silver} alt="silver" /> Արծաթ</a>
                     <a href=""><img className='categoriesImage' src={accesor} alt="accesor" /> Բիժուտերիա</a>
                 </div>
