@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import { CartProvider } from './context/CartContext';
+import { FavoritesProvider } from './context/FavoritesContext';
 import './index.css';
+import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HeaderScroll from './Components/Header/HeaderScroll';
@@ -15,13 +19,28 @@ import Loyaout from './Routes/Loyaout';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Loyaout />}></Route>
-          <Route path="/golds" element={<GoldsRouter />}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <FavoritesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Loyaout />}></Route>
+            <Route path="/golds" element={<GoldsRouter />}>
+            </Route>
+          </Routes>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+        </BrowserRouter>
+      </FavoritesProvider>
+    </CartProvider>
   </React.StrictMode>
 );
 

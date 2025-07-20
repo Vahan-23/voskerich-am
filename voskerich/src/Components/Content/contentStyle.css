@@ -92,14 +92,14 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    /* CONTAINER*/
-
+    min-height: 100vh;
 }
 
 .contentStart {
     width: 100%;
     height: auto;
-    /* VIDEO CONTAINER */
+    min-height: 100vh;
+    object-fit: cover;
 }
 
 .goToCategories {
@@ -110,7 +110,6 @@
     height: auto;
     top: 48%;
     max-width: calc(50% - 6.8rem);
-    /* DIV TEXT CONTAINER */
     width: 100%;
     padding-left: 6.8rem;
     -webkit-box-align: start;
@@ -121,22 +120,21 @@
 .textMenu {
     font-size: 50px;
     font-weight: 200;
-    /* H1 CONTAINER */
     color: #ab9696;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .textPropMenu {
     font-size: 25px;
     font-weight: 200;
-    /* PARAGRAPH CONTAINER */
     color: #ab9696;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .goToCategories a {
     font-size: 28px;
     text-decoration: none;
-    /* SCROLL TO BAJIN CATEGORIES  */
     color: black;
 }
 
@@ -146,13 +144,14 @@
     align-items: center;
     justify-content: center;
     width: 260px;
-    /* BUTTON */
     height: 50px;
     color: #fff;
     background-color: #ffffffc5;
     border: 5px;
     font-size: 28px;
     transition: 0.4s;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
 }
 
 .buttonCategories:hover {
@@ -161,13 +160,14 @@
     align-items: center;
     font-size: 28px;
     justify-content: center;
-    /* HOVER BUTTON */
     width: 260px;
     height: 60px;
     color: #fff;
     background-color: #00000081;
     color: white;
     border: 5px;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* End Container */
@@ -288,6 +288,10 @@
 /* MEDIA 1280PX START */
 
 @media (max-width: 1280px) {
+    .contentStart {
+        min-height: 70vh;
+    }
+    
     .menu {
         display: flex;
         width: 100%;
@@ -340,6 +344,9 @@
         align-items: center;
         top: 35%;
         padding-left: 0;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .goToCategories h1 {
@@ -350,6 +357,7 @@
         font-size: 18px;
         font-weight: 200;
         color: #ab9696;
+        margin-bottom: 20px;
     }
 
 
@@ -366,6 +374,18 @@
     .categoriesImage {
         width: 250px;
         height: 250px;
+    }
+    
+    .buttonCategories {
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .buttonCategories:hover {
+        width: 220px;
+        height: 50px;
+        font-size: 22px;
     }
 }
 
@@ -412,6 +432,10 @@
 
 /*tablets, ipads (landscape)*/
 @media (min-width: 768px) and (max-width: 1024px) {
+    .contentStart {
+        min-height: 60vh;
+    }
+    
     .menu{
         display: none;
     }
@@ -466,6 +490,7 @@
         align-items: center;
         top: 35%;
         padding-left: 27px;
+        text-align: center;
     }
 
     .goToCategories a {
@@ -476,17 +501,19 @@
 
     .goToCategories h1 {
         font-size: 28px;
+        margin-bottom: 8px;
     }
 
     .textPropMenu {
         font-size: 11px;
         font-weight: 200;
         color: #ab9696;
+        margin-bottom: 15px;
     }
 
     .contentStart {
         width: 100%;
-        /* height: 460px; */
+        min-height: 50vh;
     }
 
     .buttonCategories {
@@ -502,21 +529,21 @@
         font-size: 28px;
         transition: 0.4s;
         border-radius: 20px;
+        font-size: 16px;
     }
 
     .buttonCategories:hover {
         cursor: pointer;
         display: flex;
         align-items: center;
-        /* font-size: 28px; */
         justify-content: center;
-        /* HOVER BUTTON */
         width: 160px;
         height: 40px;
         color: #fff;
         background-color: #00000081;
         color: white;
         border: 5px;
+        font-size: 18px;
     }
 
     @keyframes citate {
@@ -537,6 +564,9 @@
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
+    .contentStart {
+        min-height: 40vh;
+    }
 
     .goldSilver a:hover {
         display: flex;
@@ -585,6 +615,7 @@
 
     .goToCategories h1 {
         font-size: 20px;
+        margin-bottom: 6px;
     }
 
     .snakeMargin {
@@ -598,34 +629,34 @@
         display: flex;
         align-items: center;
         top: 40%;
-        /* left: 0; */
-        /* padding-left: 9px; */
+        text-align: center;
+        padding: 0 20px;
     }
 
     .textPropMenu {
         font-size: 9px;
         font-weight: 200;
         color: #ab9696;
+        margin-bottom: 12px;
     }
 
     .buttonCategories {
-
         cursor: pointer;
-        display: none;
+        display: flex;
         align-items: center;
         width: 110px;
         height: 25px;
         color: #fff;
         background-color: #ffffffc5;
         border: 5px;
-        font-size: 28px;
+        font-size: 14px;
         transition: 0.4s;
         justify-content: center;
         border-radius: 20px;
     }
 
     .goToCategories a {
-        font-size: 17px;
+        font-size: 14px;
         text-decoration: none;
         color: black;
     }
@@ -634,7 +665,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: 16px;
         justify-content: center;
         width: 110px;
         height: 25px;
@@ -647,6 +678,7 @@
 
     .contentStart {
         margin-top: 110px;
+        min-height: 35vh;
     }
 
     .bodyContent {
@@ -677,25 +709,41 @@
         margin-top: 110px;
         width: 100%;
         height: auto;
+        min-height: 30vh;
     }
+    
     .goToCategories h1 {
-        font-size: 11px;
+        font-size: 18px;
+        margin-bottom: 4px;
     }
+    
     .textPropMenu {
-        font-size: 5px;
+        font-size: 12px;
         font-weight: 200;
         color: #ab9696;
+        margin-bottom: 10px;
     }
+    
     .goToCategories {
         width: 100%;
         display: flex;
         align-items: center;
-        top: 23%;
+        top: 30%;
         padding-left: 0;
+        text-align: center;
+        padding: 0 15px;
     }
-    .goToCategories a{
-        display: none;
+    
+    .buttonCategories {
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
     }
-
+    
+    .buttonCategories:hover {
+        width: 150px;
+        height: 38px;
+        font-size: 15px;
+    }
 }
 

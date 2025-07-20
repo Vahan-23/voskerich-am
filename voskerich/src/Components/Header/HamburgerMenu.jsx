@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./HamburgerMenuStyle.css"
+import CartIcon from '../Cart/CartIcon';
 
 function HamburgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,6 +30,9 @@ function HamburgerMenu() {
           
           <>
             <p class="logoBurger">VOSKERICH</p>
+            <div className="mobile-header-right">
+              <CartIcon />
+            </div>
             <div className="menu-icon" onClick={toggleMenu}>
               &#9776;
             </div>

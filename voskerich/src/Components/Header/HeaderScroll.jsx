@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import Header from './Header';
 import AfterHeader from './AfterHeader';
 import HamburgerMenu from './HamburgerMenu';
+import CartIcon from '../Cart/CartIcon';
+import CartSidebar from '../Cart/CartSidebar';
+
 export default function HeaderScroll() {
     const [showHeader, setShowHeader] = useState(false);
 
@@ -30,6 +33,7 @@ export default function HeaderScroll() {
             {showHeader && <Header />}
             <AfterHeader />
             <HamburgerMenu />
+            <CartSidebar />
         </>
     );
 }

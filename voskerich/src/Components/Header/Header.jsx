@@ -2,6 +2,7 @@ import React from 'react'
 import "./headerStyle.css"
 import { useState } from 'react';
 import { PopUpMenuGold , PopUpMenuSilver } from '././Pop-up/PopUpMenu';
+import CartIcon from '../Cart/CartIcon';
 
 export default function Header() {
   const [showPopMenuGold, setShowPopMenuGold] = useState(false);
@@ -22,6 +23,9 @@ export default function Header() {
   return (
     <div className='header'>
       <a className='logotype' href="/">VOSKERICH</a>
+      <div className="header-right">
+        <CartIcon />
+      </div>
       <ul className='headerMenu'>
         <li onMouseOver={handleMouseOverGold} onMouseOut={handleMouseOut} > <a href="/golds" className='menuAfleax' >Ոսկերչական Զարդեր</a>
           <div className="navigation"></div>
