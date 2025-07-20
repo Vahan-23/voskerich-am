@@ -13,7 +13,7 @@ export default function HeaderScroll() {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.innerWidth > 1024 && window.scrollY > 60) {
+            if (window.scrollY > 60) {
                 setShowHeader(true);
                 
             } else {

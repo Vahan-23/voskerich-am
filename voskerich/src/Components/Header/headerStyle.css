@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-around;
     transition: 0.8s;
-    z-index: 7;
+    z-index: 1000;
     animation: show 1.5s;
     opacity: 100%;
 }
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    z-index: 1001;
 }
 
 
@@ -30,6 +31,8 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    z-index: 1001;
+    position: relative;
 }
 .headerMenu a{
     text-decoration: none;
@@ -41,6 +44,7 @@
 }
 .headerMenu li{
     padding: 20px;
+    position: relative;
 }
 
 .headerMenu a:hover{
@@ -64,6 +68,7 @@
     transition: 0.5s;
     opacity: 100%;
     transition-delay: 0.5s;
+    z-index: 1002;
 
 }
 .headerMenu li:hover .navigation{
@@ -101,6 +106,8 @@
     font-family: 'Philosopher', sans-serif;
     font-size: 50px;
     text-decoration: none;
+    z-index: 1001;
+    position: relative;
 }
 
 .menu {
@@ -113,7 +120,7 @@
     background-color: #1a181800;
     justify-content: flex-start;
     flex-direction: column;
-    z-index: 3;
+    z-index: 999;
     transition: 0.5s;
     opacity: 100%;
     animation: showMenu 1.5s;
@@ -217,3 +224,14 @@
         display: none;
     }
   }
+
+/* Обеспечиваем правильное отображение на всех устройствах */
+@media screen and (min-width: 1025px) {
+    .header {
+        display: flex;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+}

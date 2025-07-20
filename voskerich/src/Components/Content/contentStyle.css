@@ -93,6 +93,7 @@
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    z-index: 1;
 }
 
 .contentStart {
@@ -100,6 +101,7 @@
     height: auto;
     min-height: 100vh;
     object-fit: cover;
+    z-index: 1;
 }
 
 .goToCategories {
@@ -115,6 +117,7 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+    z-index: 2;
 }
 
 .textMenu {
@@ -214,6 +217,8 @@
     height: auto;
     margin-bottom: 50px;
     flex-direction: column;
+    z-index: 1;
+    position: relative;
 }
 
 .goldSilverProp {

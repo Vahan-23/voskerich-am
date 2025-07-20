@@ -13,6 +13,7 @@
   transition: 0.5s;
     opacity: 100%;
     transition-delay: 0.5s;
+    z-index: 1003;
 }
 .popup-menu a{
   color:#1a1818 ;
@@ -65,6 +66,7 @@
   transition: 0.5s;
     opacity: 100%;
     transition-delay: 0.5s;
+    z-index: 1003;
 }
 
 .mens {
@@ -80,6 +82,7 @@
   transition: 0.5s;
   opacity: 100%;
   transition-delay: 0.5s;
+  z-index: 1003;
 }
 .mens h3{
   text-align: center;
